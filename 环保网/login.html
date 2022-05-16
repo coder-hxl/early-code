@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable">
+    <title>绿色环境-登录</title>
+    <link rel="shortcut icon" href="./frame/ico.ico">
+    <link rel="stylesheet" href="./frame/Bootstrap/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="head">
+        <div class="nav navbar-default container-fluid-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- 下拉按钮 -->
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- logo -->
+                    <a href="./index.html" class="logo"><img src="./images/logo.png"></a>
+                </div>
+                <!-- 快速导航 -->
+                <nav class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav  navbar-left">
+                        <li class="dropdown">
+                            <a href="./index.html">首页</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="./404.html">主要内容</b></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="./contribution.html">环境保护</b></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="./404.html">环境知识</b></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="./404.html">投诉</b></a>
+                        </li>
+                    </ul>
+                    <div class="register">
+                        <a href="./login.html" id="lg">登录</a>
+                        <a href="./regist.html" id="lg">注册</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container box">
+        <div class="col-md-6 col-sm-12">
+            <img src="./images/login/login.png" alt="">
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="login" style="margin-top: 150px;">
+                <div>
+                    <h2>欢迎登录</h2>
+                    <form action="./php/login.php" method="POST">
+                        <div class="lg-box">
+                            <input type="text" name="username" placeholder="请输入账号" autocomplete="off"> <i class="xian"></i>
+                            <div class="text">
+                                <span id="lo_text"></span>
+                            </div>
+                        </div>
+                        <div class="lg-box">
+                            <input type="password" name="password" placeholder="请输入密码"> <i class="xian"></i>
+                            <div class="text">
+                                <span id="lo_text"></span>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <button type="submit" class="kai" id="btn">登录</button>
+                            <a href="./regist.html">没有账号？立刻注册</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./frame/Bootstrap/jquery/jquery.min.js"></script>
+    <script src="./frame/Bootstrap/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/common.js"></script>
+
+</body>
+
+</html>
